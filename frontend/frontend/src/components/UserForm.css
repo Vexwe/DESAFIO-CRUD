@@ -1,0 +1,135 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  padding: 40px;
+  color: #333;
+}
+
+/* CONTAINER PRINCIPAL */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* TÍTULO */
+form h2 {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* INPUTS */
+form input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 180px;
+  font-size: 14px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #1e88e5;
+}
+
+/* BOTÃO SALVAR / ATUALIZAR */
+form button {
+  background-color: #1e88e5;
+  color: #fff;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #1565c0;
+}
+
+/* TABELA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #f1f3f5;
+}
+
+thead th {
+  text-align: left;
+  padding: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+tbody td {
+  padding: 12px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+/* AÇÕES */
+tbody td:last-child {
+  display: flex;
+  gap: 8px;
+}
+
+/* BOTÕES DE AÇÃO */
+tbody button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* EDITAR */
+tbody button:first-child {
+  color: #1e88e5;
+}
+
+/* DELETAR */
+tbody button:last-child {
+  color: #e53935;
+}
+
+/* HOVER */
+tbody button:hover {
+  transform: scale(1.1);
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  form input,
+  form button {
+    width: 100%;
+  }
+
+  tbody td:last-child {
+    justify-content: center;
+  }
+}
